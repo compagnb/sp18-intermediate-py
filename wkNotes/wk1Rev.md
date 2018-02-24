@@ -1,5 +1,5 @@
 ## Week 1 
-![Code Fingers][../imgs/codefingers.gif]
+![Code Fingers](../imgs/codefingers.gif)
 
 ### FUNCTIONS 
 * Make code shorter and easier to read
@@ -52,7 +52,7 @@ print(variableTest())
 print(firstVar)
 ```
 * When we tried to print “firstVar” we got the following error because avariable that’s inside a function can’t be used again when the function has finished running because it only exists inside the function (the scope of a variable).  
-![scope][../imgs/scope.png]
+![scope](../imgs/scope.png)
 * If a variable is defined outside of the function, it has a different scope and can be used inside the function and outside of it. 
 ```python
 anotherVar = 100
@@ -64,6 +64,7 @@ def variableTest2():
 ```
 
 ### EXERCISE
+![Moon](../imgs/moon.png)
 * Create a program to calculate our weight on the moon (or any planet):
     * Create function to take the starting weight and increase the weight each year
     * Modify the function so that you can change the amount of years

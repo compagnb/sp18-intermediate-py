@@ -1,5 +1,5 @@
 ## Week 1 
-![Giraffe][../imgs/giraffe.gif]
+![Giraffe](../imgs/giraffe.gif)
 
 ### OBJECTS & CLASSES
 * **Objects** are a way of organizing code in a program and breaking things down to make it easier to think about complex ideas.
@@ -7,7 +7,7 @@
 
 
 ### BREAKING THINGS INTO CLASSES
-![Classes][../imgs/classes.png]
+![Classes](../imgs/classes.png)
 * Objects are defined by classes - a to do this is to classify objects into groups
 * Use classes to organize bits of code
 * An object is like a “member” of a class
@@ -45,7 +45,7 @@ class SillyClass:
         print('this is function 2')
 ```
 * We can add **characteristics** to each class to say what it can and cannot do. A characteristic is a trait that all of the members of the class (and its children) share.
-![Characteristics][../imgs/characteristic.png]
+![Characteristics](../imgs/characteristic.png)
 * These **characteristics** can be thought of as actions or **functions** - things an object of that class can do. The **self** parameter is a way for one function to call another function in the class (and in the parent class).
 ```python
 class Animals(Things):
@@ -95,7 +95,7 @@ rafael.forward(100)
 
 ### INHERITED FUNCTIONS
 * Each class can use the functions of its parent (and their parents), so the class at the lowest level actually has the least amount of functions because it can use its parent’s functions, and its parent’s parent’s function.
-![Inherit][../imgs/inherit.png]
+![Inherit](../imgs/inherit.png)
 
 ### FUNCTIONS CALLING OTHER FUNCTIONS
 * To have a function called in a class we use the self parameter to allow us to call another function. Here is an example:
