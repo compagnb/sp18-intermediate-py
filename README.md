@@ -20,7 +20,7 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 
 ### Course Breakdown:
 
-#### [Week 1: Classes & Objects](week1.md)
+#### [Week 1: Classes & Objects](wkNotes/week1.md)
 * Children & Parents
 * Adding Objects to Classes
 * Adding Class Characteristics as Functions
