@@ -20,20 +20,24 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 
 ### Course Breakdown:
 
-#### [Week 1: Classes & Objects](wkNotes/week1.md)
+#### [Week 1: Review](wkNotes/wk1Rev.md)
+#### [Week 1: Classes & Objects](wkNotes/Wk1.md)
 * Children & Parents
 * Adding Objects to Classes
 * Adding Class Characteristics as Functions
 * Inherited Functions
 * Functions Calling Functions
 * Initializing An Object
-* In-class Exercises/Challenges: 
+* **In-class Exercises/Challenges**: 
     * Create a class that can be used for all the drivers used in Mario Kart
     * Create a class that can be used for all the karts used in Mario Kart
     * Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
     * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
     * Create a class to build a Maze.
+* **Vocabulary**: child, class, initialize, instance, object, parent 
+* **Keywords**: class, pass 
+
 
 #### Week 2: Key-binding & Basic Sprites
 * Review
