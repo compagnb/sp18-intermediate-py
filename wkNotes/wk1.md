@@ -17,16 +17,6 @@ class Things:
 ```
 * We define classes by using the **class** keyword followed by a name. When we create classes we start with the broadest class first. In this case, we use the keyword **pass** to let Python know we do not have any more information for this class at this time. 
 
-### CHILDREN & PARENTS
-* If a class is part of another class it’s a **child** of that class, and the other class is it’s **parent**. 
-```python
-class InAnimate(Things):
-    pass
-class Animate(Things):
-    pass
-```
-* To tell Python that a class is a **child** of another class we add the name of the **parent** in parenthesis after the name of our new class. 
-
 ### ADDING OBJECTS TO CLASSES
 * An object of a class is also referred to as an instance of a class
 ```python
@@ -58,44 +48,6 @@ class Animals(Things):
 ```
 * We often created classes with functions that do nothing (using **pass**) as a way to figure out what the class should do, before getting into the details of the individual functions. 
 * Each class can use the characteristics (functions) of its parent, so we don’t have to make really complicated class – we put the functions at the highest parent where the characteristic applies.
-
-### WHY USE OBJECTS & CLASSES
-* After we create an object, we can call and run functions provided by its class (and its parents class). We call the function by using the dot operator and the name of the function like this:
-```python
-geoffrey = Giraffes()
-geoffery.move()
-geoffery.eatFromTrees()
-```
-* We can create more objects, and because we are using objects and classes we tell Python exactly which object to do what. 
-```python
-geoffrey = Giraffes()
-april = Giraffes()
-april.move()
-geoffery.eatFromTrees()
-```
-
-### OBJECTS AND CLASSES IN PICTURES
-* When we use **turtle.Pen()** the turtle module uses the Pen class. 
-```python
-import turtle
-donatello = turtle.Pen()
-rafael = turtle.Pen()
-```
-* Now that the objects are created, they become powerful… we can call functions on each and they will move independently (without effecting any of the others)!
-```python
-donatello.forward(50)
-donatello.right(90)
-donatello.forward(20)
-rafael.left(90)
-rafael.forward(100)
-```
-* Every time we call **turtle.Pen()**, we create a new independent **object**. Since they area all objects of the **Pen** class, we can use the same functions on each **object**… but because they are objects we can move each independently. 
-* What happens when we create an object with the same variable name as the one we have already used?
-
-
-### INHERITED FUNCTIONS
-* Each class can use the functions of its parent (and their parents), so the class at the lowest level actually has the least amount of functions because it can use its parent’s functions, and its parent’s parent’s function.
-![Inherit](../imgs/inherit.png)
 
 ### FUNCTIONS CALLING OTHER FUNCTIONS
 * To have a function called in a class we use the self parameter to allow us to call another function. Here is an example:
@@ -132,21 +84,40 @@ print(april.giraffeSpots)
 * When we create an object of a class with an **__init__** function, it has the same effect as actually calling the function, so we need to include a parameter to pass.
 * When we create an object of a class, we can refer to its variables or functions using the dot operator and the name of the variable or function we want to use. 
 
-### In-class Exercises/Challenges: 
+### WHY USE OBJECTS & CLASSES
+* After we create an object, we can call and run functions provided by its class (and its parents class). We call the function by using the dot operator and the name of the function like this:
+```python
+geoffrey = Giraffes()
+geoffery.move()
+geoffery.eatFromTrees()
+```
+* We can create more objects, and because we are using objects and classes we tell Python exactly which object to do what. 
+```python
+geoffrey = Giraffes()
+april = Giraffes()
+april.move()
+geoffery.eatFromTrees()
+```
+
+* **In-class Exercises/Challenges**: 
+    * Create a program to calculate our weight on the moon (or any planet):
+        * Create function to take the starting weight and increase the weight each year
+        * Modify the function so that you can change the amount of years
+        * Take input from the user for each and then display how much the user would weigh
+    * Create a class named Giraffe. 
+        * Give the class functions that represent things a giraffe would do. (i.e. eat, sleep, left foot forward, right foot forward, etc.)
+        * Make a function within the Giraffe class to make the giraffe dance by calling other functions within the class. 
+        * Make an instance of the Giraffe, and make the instance dance.
+        * Make two instances and make them both do different things. 
+        * Make two instances of the Giraffe class, that have a different number of spots (characteristics).
     * Create a class that can be used for all the drivers used in Mario Kart
     * Create a class that can be used for all the karts used in Mario Kart
-    * Using the turtle class create a generative/fractal design
-    * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
-    * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
-    * Create a class to build a Maze.
 
 ### VOCABULARY:
-* child 
 * class
 * initialize
 * instance 
 * object
-* parent 
 
 ### KEYWORDS:
 * class 

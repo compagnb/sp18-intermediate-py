@@ -36,6 +36,7 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
         * Make a function within the Giraffe class to make the giraffe dance by calling other functions within the class. 
         * Make an instance of the Giraffe, and make the instance dance.
         * Make two instances and make them both do different things. 
+        * Make two instances of the Giraffe class, that have a different number of spots (characteristics).
     * Create a class that can be used for all the drivers used in Mario Kart
     * Create a class that can be used for all the karts used in Mario Kart
 * **Vocabulary**: class, initialize, instance, object

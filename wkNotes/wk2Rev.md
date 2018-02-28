@@ -3,13 +3,14 @@
 
 ### CHILDREN & PARENTS
 * If a class is part of another class it’s a **child** of that class, and the other class is it’s **parent**. 
+![parent](../imgs/parent.png)
+* To tell Python that a class is a **child** of another class we add the name of the **parent** in parenthesis after the name of our new class. 
 ```python
 class InAnimate(Things):
     pass
 class Animate(Things):
     pass
 ```
-* To tell Python that a class is a **child** of another class we add the name of the **parent** in parenthesis after the name of our new class. 
 
 ### OBJECTS AND CLASSES IN PICTURES
 * When we use **turtle.Pen()** the turtle module uses the Pen class. 
