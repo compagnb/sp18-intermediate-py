@@ -44,7 +44,7 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 
 
 #### [Week 2: Classes Continued...](wkNotes/wk2Rev.md)
-#### [Week 2: Key-binding & Basic Sprites](wkNotes/wk2.md)
+#### [Week 2: Objects & Classes In Pictures](wkNotes/wk2.md)
 * Children & Parents
 * Inherited Functions
 * Using Graphics
