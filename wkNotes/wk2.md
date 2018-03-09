@@ -1,4 +1,5 @@
 ### OBJECTS AND CLASSES IN PICTURES
+![generative art](../imgs/genart.gif)
 * When we use **turtle.Pen()** the turtle module uses the Pen class. 
 ```python
 import turtle
@@ -31,7 +32,7 @@ donatello = turtle.Pen()
 donatello.forward(50)
 ```
 * The above function tells the turtle to move forward 50 pixels. A pixel is a single point on the screen – the smallest element that can be represented. (The same as computer monitors and TV Screens... if you zoom in enough you will see the image is made out of dots).
-![pixel](../imgs/pixelToad.png)
+![pixel](../imgs/pixelpika.gif)
 * We can change the direction of the turtle by using the left (or right) function to rotate the turtle by the amount of degrees specified.
 ```python
 donatello.left(90)
@@ -197,12 +198,9 @@ def myStar(size, filled):
         t.end_fill()
 ```
 
-
-
 * loading/formating
 * background/sprite
 * Key Binding methods
-* In-class Exercise/Challenges
 * **In-class Exercises/Challenges**: 
     * Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
