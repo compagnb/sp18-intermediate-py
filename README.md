@@ -52,7 +52,6 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 * background/sprite
 * Objects & Classes in Pictures
 * Key Binding methods
-* In-class Exercise/Challenges
 * **In-class Exercises/Challenges**: 
     * Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.

@@ -108,33 +108,6 @@ for x in range(1, 19):
 
 ![star](../imgs/star.png)
 
-#### Some other functions of pen allow us to do different things for example...
-    * The up() function picks up the “pen”, so to speak, and allows us to move the turtle without drawing a line.
-```python
-donatello.up()
-```
-    * The down() function puts the “pen” down and allows the turtle to draw when it is moved.
-```python
-donatello.down()
-```
-    * circle(size) allows us to draw a circle of a particular size.
-```python
-donatello.circle(50)
-```
-    * setheading(headingAngle) turns the turtle to face a particular direction.
-```python
-donatello.setHeading(90)
-```
-    * begin_fill() and end_fill() are used to fill in an area of the canvas 
-```python
-donatello.begin_fill()
-donatello.circle(50)
-donatello.end_fill()
-```  
-    * color() is used to change the color of the pen.
-```python
-donatello.color(1, 1, 1)
-```  
 ### COLORING THINGS IN
 * The color function takes three parameters. The first specifies the amount of red, the second the amount of green, and the last the amount of blue. This recipe used to call colors is “RGB”
 ```python
@@ -211,6 +184,37 @@ def myStar(size, filled):
             t.left(225)
     if filled == True:
         t.end_fill()
+```
+#### Some other functions of pen allow us to do different things for example...
+    * The **up()** function picks up the “pen”, so to speak, and allows us to move the turtle without drawing a line.
+    
+```python
+donatello.up()
+```
+    * The **down()** function puts the “pen” down and allows the turtle to draw when it is moved.
+    
+```python
+donatello.down()
+```
+    * **setheading(headingAngle)** turns the turtle to face a particular direction.
+
+```python
+donatello.setHeading(90)
+```
+    * **speed()** allows us to change the speed in which the turtle draws.
+
+```python
+donatello.pensize(5)
+```
+    * **pensize(size)** allows us to change the thickness of the line that the turtle draws.
+
+```python
+donatello.pensize(5)
+```
+    * **pencolor()** allows us to change the thickness of the line that the turtle draws.
+
+```python
+donatello.pensize(5)
 ```
 
 * loading/formating
