@@ -12,6 +12,10 @@ class Animate(Things):
     pass
 ```
 
+### INHERITED FUNCTIONS
+* Each class can use the functions of its parent (and their parents), so the class at the lowest level actually has the least amount of functions because it can use its parent’s functions, and its parent’s parent’s function.
+![Inherit](../imgs/inherit.png)
+
 ### OBJECTS AND CLASSES IN PICTURES
 * When we use **turtle.Pen()** the turtle module uses the Pen class. 
 ```python
@@ -29,12 +33,6 @@ rafael.forward(100)
 ```
 * Every time we call **turtle.Pen()**, we create a new independent **object**. Since they area all objects of the **Pen** class, we can use the same functions on each **object**… but because they are objects we can move each independently. 
 * What happens when we create an object with the same variable name as the one we have already used?
-
-
-### INHERITED FUNCTIONS
-* Each class can use the functions of its parent (and their parents), so the class at the lowest level actually has the least amount of functions because it can use its parent’s functions, and its parent’s parent’s function.
-![Inherit](../imgs/inherit.png)
-
 
 ### In-class Exercises/Challenges: 
     * Create a class that can be used for all the drivers used in Mario Kart
