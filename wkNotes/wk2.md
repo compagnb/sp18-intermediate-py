@@ -1,5 +1,8 @@
-### OBJECTS AND CLASSES IN PICTURES
+## Week 2 
+
 ![generative art](../imgs/genart.gif)
+
+### OBJECTS AND CLASSES IN PICTURES
 * When we use **turtle.Pen()** the turtle module uses the Pen class. 
 ```python
 import turtle
@@ -24,6 +27,7 @@ import turtle
 donatello = turtle.Pen()
 ```
 * If we run this as is...we will see that as soon as we call the instance, a canvas is automatically created. The triangle in the window is the turtle. (The triangle points the direction the turtle is facing).
+
 ![turtle](../imgs/turtle.png)
 
 ### MOVING THE TURTLE:
@@ -32,13 +36,17 @@ donatello = turtle.Pen()
 donatello.forward(50)
 ```
 * The above function tells the turtle to move forward 50 pixels. A pixel is a single point on the screen – the smallest element that can be represented. (The same as computer monitors and TV Screens... if you zoom in enough you will see the image is made out of dots).
+
 ![pixel](../imgs/pixelpika.gif)
+
 * We can change the direction of the turtle by using the left (or right) function to rotate the turtle by the amount of degrees specified.
 ```python
 donatello.left(90)
 ```
 * In this case the turtle rotates 90 degrees to the left. If you are confused about degrees reference the below diagram:
+
 ![rotation](../imgs/rotate.png)
+
 When you call left(90) it is the same as calling right(270)
 * To erase the canvas, we use the reset function. This will clear the canvas and puts the turtle back at its starting position.
 ```python
@@ -50,7 +58,9 @@ donatello.clear()
 ```
 
 ### DRAWING SHAPES
+
 ![square](../imgs/square.png)
+
 * If you repeat the code below additional times, it will draw a square:
 ```python
 donatello.forward(50)
@@ -71,7 +81,9 @@ for x in range(1,5):
     donatello.left(94)
 ```
 * If we increase the range, the star will have more points. If we increase the number the turtle moves forward, we will increase the length of the star tips. The angle, which we rotate, makes the point skinnier or fatter. The above code looks like this:
+
 ![nonsquare](../imgs/nonsquare.png)
+
 * If we use a function, we can customize the size of the shapes. Here is an example using a square.
 ```python
 def mySquare(size):
@@ -93,6 +105,7 @@ for x in range(1, 19):
         donatello.left(225)
 ```
 * In this example, we use the expression x % 2 == 0 (or if x mod 2 is equal to 0) to tell us which way the turtle will rotate (left or right). Essentially, the modulo operator (%) finds the remainder of x when divided by 2.
+
 ![star](../imgs/star.png)
 
 #### Some other functions of pen allow us to do different things for example...
@@ -132,7 +145,9 @@ donatello.color(1, 1, 1)
 donatello.color(1, 0, 0)
 ```  
 * With a 1 in the red parameter, we are telling Python to put 100% red. The 0’s in the green and blue parameters tell Python to use no green and blue.
+
 ![rgb](../imgs/rgb.png)
+
 * Red, Green & Blue are primary colors for light. We can’t create them by mixing other colors, but we can create other colors like yellow by mixing them. Here is an example of mixing 100% of red and 100% of green to create a yellow:
 ```python
 donatello.color(1, 1, 0)
