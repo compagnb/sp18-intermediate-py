@@ -24,3 +24,4 @@ class Animate(Things):
 ### VOCABULARY:
 * child 
 * parent 
+* inherit

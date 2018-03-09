@@ -21,25 +21,25 @@ rafael.forward(100)
 * What happens when we create an object with the same variable name as the one we have already used?
 
 ### USING THE TURTLE MODULE
-* Before we can use the turtle module we need to import the module. Then we must create an instance of the Pen class.
+* Before we can use the turtle module we need to **import** the module. Then we must create an instance of the Pen class.
 ```python
 import turtle
 donatello = turtle.Pen()
 ```
-* If we run this as is...we will see that as soon as we call the instance, a canvas is automatically created. The triangle in the window is the turtle. (The triangle points the direction the turtle is facing).
+* If we run this as is...we will see that as soon as we call the **instance**, a **canvas** is automatically created. The triangle in the window is the turtle. (The triangle points the direction the turtle is facing).
 
 ![turtle](../imgs/turtle.png)
 
 ### MOVING THE TURTLE:
-* By calling these functions, the turtle can be moved around the screen. Just as we learned last week we call the functions of the class by using the dot after the instance name and then calling the function.
+* By calling these functions, the turtle can be moved around the screen. Just as we learned last week we call the functions of the class by using the dot after the instance name and then calling the function. This function tells the turtle to move forward 50 pixels:
 ```python
 donatello.forward(50)
 ```
-* The above function tells the turtle to move forward 50 pixels. A pixel is a single point on the screen – the smallest element that can be represented. (The same as computer monitors and TV Screens... if you zoom in enough you will see the image is made out of dots).
+*  A **pixel** is a single point on the screen – the smallest element that can be represented. (The same as computer monitors and TV Screens... if you zoom in enough you will see the image is made out of dots).
 
 ![pixel](../imgs/pixelpika.gif)
 
-* We can change the direction of the turtle by using the left (or right) function to rotate the turtle by the amount of degrees specified.
+* We can change the direction of the turtle by using the left (or right) function to rotate the turtle by the amount of **degrees** specified.
 ```python
 donatello.left(90)
 ```
@@ -47,12 +47,12 @@ donatello.left(90)
 
 ![rotation](../imgs/rotate.png)
 
-When you call left(90) it is the same as calling right(270)
+*When you call left(90) it is the same as calling right(270).*
 * To erase the canvas, we use the reset function. This will clear the canvas and puts the turtle back at its starting position.
 ```python
 donatello.reset()
 ```
-* You can also use the clear function to erase the canvas. This function does not move the turtle back to its starting point.
+* You can also use the clear function to erase the canvas. This function **does not** move the turtle back to its starting point.
 ```python
 donatello.clear()
 ```
@@ -66,14 +66,14 @@ donatello.clear()
 donatello.forward(50)
 donatello.left(90)
 ```
-* You can do this simpler by using a for loop. We will use reset first to make sure we start at the beginning.
+* You can do this simpler by using a **for** loop. We will use reset first to make sure we start at the beginning.
 ```python
 donatello.reset()
 for x in range(1,5):
     donatello.forward(50)
     donatello.left(90)
 ```
-* If we change parameters in the loop, we can create shapes different from a square.
+* If we change **parameters** in the loop, we can create shapes different from a square.
 ```python
 donatello.reset()
 for x in range(1,5):
@@ -93,7 +93,9 @@ def mySquare(size):
         t.left(90)
 ```
 * In this case we use the parameter of our function (size) to change the length in which the turtle draws each side.
+
 ![size](../imgs/size.png)
+
 * We can use an if statement to control how the turtle will turn and draw another variation.
 ```python
 donatello.reset()
@@ -104,12 +106,12 @@ for x in range(1, 19):
     else:
         donatello.left(225)
 ```
-* In this example, we use the expression x % 2 == 0 (or if x mod 2 is equal to 0) to tell us which way the turtle will rotate (left or right). Essentially, the modulo operator (%) finds the remainder of x when divided by 2.
+* In this example, we use the expression x % 2 == 0 (or if x mod 2 is equal to 0) to tell us which way the turtle will rotate (left or right). Essentially, the **modulo operator (%)** finds the remainder of x when divided by 2.
 
 ![star](../imgs/star.png)
 
 ### COLORING THINGS IN
-* The color function takes three parameters. The first specifies the amount of red, the second the amount of green, and the last the amount of blue. This recipe used to call colors is “RGB”
+* The **color()** function takes three parameters. The first specifies the amount of **red**, the second the amount of **green**, and the last the amount of **blue**. This recipe used to call colors is “RGB”
 ```python
 .color(red, green, blue)
 ```  
@@ -142,14 +144,14 @@ donatello.circle(50)
 ```python
 donatello.color(1, 1, 0)
 ```  
-* In this case we set the color to be yellow. Now that the color is set, we must tell Python that we want to fill in the area of the canvas that we are drawing on with that color. We do so by using the begin_fill() function, and then drawing the circle by calling the circle function.
+* In this case we set the color to be yellow. Now that the color is set, we must tell Python that we want to fill in the area of the canvas that we are drawing on with that color. We do so by using the **begin_fill()** function, and then drawing the circle by calling the circle function.
 ```python
 donatello.color(1, 1, 0)
 donatello.begin_fill()
 donatello.circle(50)
 donatello.end_fill()
 ```  
-* Finally, we tell Python that we are don filling in the canvas by using the end_fill() function.
+* Finally, we tell Python that we are don filling in the canvas by using the **end_fill()** function.
 * If we make a function, we can easily draw filled circles using one command. Here is an
 example of a function we would use:
 ```python
@@ -160,7 +162,7 @@ def myCircle(red, green, blue):
     t.end_fill()
 ```  
 * Similar to how we made a function for drawing a circle we can do the same for squares. To supply us with more options, lets add a parameter to tell Python if we want the square to be filled or not.
-• By using the if statement, if filled is true we will call the function begin_fill() and if it isn’t we will not. We will also do the same for the end_fill() function. This will allow us the flexibility to draw many different types of squares.
+• By using the if statement, if filled is true we will call the function **begin_fill()** and if it isn’t we will not. We will also do the same for the **end_fill()** function. This will allow us the flexibility to draw many different types of squares.
 ```python
 def mySquare(size, filled):
     if filled == True:
@@ -185,18 +187,88 @@ def myStar(size, filled):
     if filled == True:
         t.end_fill()
 ```
+
+### BACKGROUNDS & BASIC SPRITES
+* We have already begun to use the **Pen()** class within the turtle module, but there are other classes. The **Screen()** class gives us a playground for the turtles to use.
+
+```python
+wn = turtle.Screen()
+```
+* Once we assign an instance of **Screen()**  to a variable, we can start to control more aspects of the area we use the turtles in. 
+    * **bgcolor()** allows us to change the background color of the screen
+    * **title()** allows us to change the name of the window.
+    * **bgpic()** allows us to add a background image 
+
+```python
+wn.bgcolor("black")
+wn.title("Shapes")
+wn.bgpic("stars.gif")
+
+```
+
+### BASIC SPRITES 
+* The default setting for the turtle's shape is an **arrow**, but this can be modified to be set as other shapes. To use one of the alternate shapes already registered in the turtle **Screen** shape dictionary. If it is a **registered shape**, use the **shape()** function to set it as one of the following shapes:
+
+```python
+t.shape("arrow")
+t.shape("turtle")
+t.shape("circle")
+t.shape("square")
+t.shape("triangle")
+t.shape("classic")
+```
+
+* In order to add a new shape to this library, we will first need to make sure the image file sized correctly. If it is too big then it will take up too much of the screen and if it is too small we will not be able to see it. A good size to work with is **30 pixels.**
+* The **image** should be placed in the same folder as the script. 
+* Store the name of the image as a **string** variable.
+
+```python
+img = "pikachu.gif"
+```
+* We can then **register** the image as a turtle shape by using the following command:
+
+```python
+wn.register_shape(img)
+```
+
+* Then you can call the filename as a shape by using the **shape()** function, like we did before. 
+
+```python
+t.shape(pikaImg)
+```
+
+
+### KEYBINDING
+* First we need to use turtle's **listen()** function to tell Python that we will be listening for an **event**, like a key press.
+ 
+```python
+t.listen()
+```
+* Next we are going us the **onkey()** to tell Python to listen for a specific key to be pressed. When the key is pressed it will call the function we specify. In this case we will create a **turnLeft()** function that will be called when the **“Left”** arrow key is pressed. 
+ 
+```python
+t.onkey(turnLeft, "left")
+```
+* The function **turnLeft()** will rotate the player turtle 30 degrees every time it is called using the left function. We can do the same for the turning the player right. 
+
+```python
+def turnLeft():
+    player.left(30)
+``` 
+* You can also assign other functions when different keys are pressed. 
+
 #### Some other functions of pen allow us to do different things for example...
-    * The **up()** function picks up the “pen”, so to speak, and allows us to move the turtle without drawing a line.
+* The **up()** function picks up the “pen”, so to speak, and allows us to move the turtle without drawing a line.
     
 ```python
 donatello.up()
 ```
-    * The **down()** function puts the “pen” down and allows the turtle to draw when it is moved.
+* The **down()** function puts the “pen” down and allows the turtle to draw when it is moved.
     
 ```python
 donatello.down()
 ```
-    * **setheading(headingAngle)** turns the turtle to face a particular direction.
+* **setheading(headingAngle)** turns the turtle to face a particular direction.
 
 ```python
 donatello.setHeading(90)
@@ -206,31 +278,67 @@ donatello.setHeading(90)
 ```python
 donatello.pensize(5)
 ```
-    * **pensize(size)** allows us to change the thickness of the line that the turtle draws.
+* **pensize(size)** allows us to change the thickness of the line that the turtle draws.
 
 ```python
 donatello.pensize(5)
 ```
-    * **pencolor()** allows us to change the thickness of the line that the turtle draws.
+* **pencolor()** allows us to change the thickness of the line that the turtle draws.
 
 ```python
 donatello.pensize(5)
 ```
+* [Here is a link to the turtle module reference].(https://docs.python.org/3.3/library/turtle.html?highlight=turtle#module-turtle)
 
-* loading/formating
-* background/sprite
-* Key Binding methods
 * **In-class Exercises/Challenges**: 
-    * Using the turtle class create a generative/fractal design
-    * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
+    * Using the turtle class create a generative/fractal design.
+    * Create a class that provides methods for drawing the following shapes: Square, Square without corners,  Circle, Octagon, Pentagon.
     * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
     * Create a class to build a Maze.Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
     * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
-    * Create a class to build a Maze.
+    * Create a function to navigate through the Maze program.
     * Create a “Player” class that allows a user to navigate the maze created last week.
     * Create a “Player” class that controls a spaceship on the screen. (beginning of alternative version of space invaders)
     * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
     * Limit the players movement to the viewable screen size/maze boundaries.
-* **Vocabulary**: child, parent 
-* **Keywords**: 
+
+### VOCABULARY:
+* boolean
+* canvas
+* coordinates
+* degrees
+* dimensions
+* event
+* import
+* image
+* module
+* pixel
+* sprite
+
+### KEYWORDS:
+* import
+* %
+
+### TURTLE KEYWORDS:
+* forward
+* backward
+* left
+* right
+* reset
+* clear
+* up
+* down
+* circle
+* setHeading
+* begin_fill
+* end_fill
+* color
+* pencolor
+* pensize
+* listen
+* onkey
+* bgpic
+* bgcolor
+* register_shape
+* shape

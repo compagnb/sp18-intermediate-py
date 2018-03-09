@@ -61,8 +61,10 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
     * Create a “Player” class that controls a spaceship on the screen. (beginning of alternative version of space invaders)
     * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
     * Limit the players movement to the viewable screen size/maze boundaries.
-* **Vocabulary**: child, parent 
-* **Keywords**: 
+* **Vocabulary**: child, parent, boolean, canvas, coordinates, degrees, dimensions, event, import, image, module, pixel, sprite 
+* **Keywords**: import, %
+* **Turtle Keywords**: forward, backward, left, right, reset, clear, up, down, circle, setHeading, begin_fill, end_fill, color, pencolor, pensize, listen, onkey, bgpic, bgcolor, register_shape, shape
+
 
 
 #### Week 3: Modules
