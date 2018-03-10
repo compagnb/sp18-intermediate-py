@@ -111,6 +111,7 @@ for x in range(1, 19):
 ![star](../imgs/star.png)
 
 ### COLORING THINGS IN
+
 * The **color()** function takes three parameters. The first specifies the amount of **red**, the second the amount of **green**, and the last the amount of **blue**. This recipe used to call colors is “RGB”
 ```python
 .color(red, green, blue)
