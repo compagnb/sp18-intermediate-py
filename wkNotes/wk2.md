@@ -229,21 +229,27 @@ donatello.pencolor(1, 0, 0)
     * Using the turtle class create a generative/fractal design, like this:
 
 ![generative art](../imgs/genart.png)
+
     * Draw a box without corners. 
     
 ![box wo corners](../imgs/boxwocorners.png)
+
     * Draw a triangle.
     
 ![triangles](../imgs/triangle.png)
+
     * Draw an 8-sided shape. 
     
 ![octogon](../imgs/octo.png)
+
     * Draw a filled Octogon.
     
 ![filled octogon](../imgs/filledOcto.png)
+
     * Create a function to draw a star that will take two parameters: the size and number of points. The beginning of the function will look something like this:
 
-![starfunct](../imgs/starfun.png)   
+![starfunct](../imgs/starfun.png) 
+
     * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
     * Create a function to navigate through the Maze program.
     * Create a class to build a Maze.Using the turtle class create a generative/fractal design.
