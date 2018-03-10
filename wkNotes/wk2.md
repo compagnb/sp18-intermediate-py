@@ -164,7 +164,7 @@ def myCircle(red, green, blue):
     t.end_fill()
 ```  
 * Similar to how we made a function for drawing a circle we can do the same for squares. To supply us with more options, lets add a parameter to tell Python if we want the square to be filled or not.
-• By using the if statement, if filled is true we will call the function **begin_fill()** and if it isn’t we will not. We will also do the same for the **end_fill()** function. This will allow us the flexibility to draw many different types of squares.
+* By using the if statement, if filled is true we will call the function **begin_fill()** and if it isn’t we will not. We will also do the same for the **end_fill()** function. This will allow us the flexibility to draw many different types of squares.
 ```python
 def mySquare(size, filled):
     if filled == True:
@@ -189,7 +189,9 @@ def myStar(size, filled):
     if filled == True:
         t.end_fill()
 ```
-#### Some other functions of pen allow us to do different things for example...
+
+###  Some other functions of pen allow us to do different things for example...
+
 * The **up()** function picks up the “pen”, so to speak, and allows us to move the turtle without drawing a line.
     
 ```python
@@ -223,7 +225,7 @@ donatello.pencolor(1, 0, 0)
 * [Here is a link to the turtle module reference].(https://docs.python.org/3.3/library/turtle.html?highlight=turtle#module-turtle)
 
 
-* **In-class Exercises/Challenges**: 
+### **In-class Exercises/Challenges**: 
     * Using the turtle class create a generative/fractal design, like this:
 
 ![generative art](../imgs/genart.png)
