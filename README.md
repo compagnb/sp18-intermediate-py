@@ -49,9 +49,7 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 * Inherited Functions
 * Using Graphics
 * loading/formating
-* background/sprite
 * Objects & Classes in Pictures
-* Key Binding methods
 * **In-class Exercises/Challenges**: 
     * Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
@@ -66,8 +64,10 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 * **Turtle Keywords**: forward, backward, left, right, reset, clear, up, down, circle, setHeading, begin_fill, end_fill, color, pencolor, pensize, listen, onkey, bgpic, bgcolor, register_shape, shape
 
 
-
-#### Week 3: Modules
+#### [Week 3: BACKGROUNDS & BASIC SPRITES](wkNotes/wk3Rev.md)
+#### [Week 3: Modules](wkNotes/wk3.md)
+* Key Binding methods
+* background/sprite
 * Review of Built-in Functions/Modules
     * abs, bool, dir, eval, exec, float, int, len, max, min, range, sum
     * Random - randint, choice, shuffle
