@@ -63,7 +63,7 @@ def variableTest2():
     return firstVar * secondVar * anotherVar
 ```
 
-### EXERCISE
+### In-class Exercises/Challenges:
 ![Moon](../imgs/moon.png)
 * Create a program to calculate our weight on the moon (or any planet):
     * Create function to take the starting weight and increase the weight each year

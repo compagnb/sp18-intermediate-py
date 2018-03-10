@@ -225,7 +225,7 @@ donatello.pencolor(1, 0, 0)
 * [Here is a link to the turtle module reference].(https://docs.python.org/3.3/library/turtle.html?highlight=turtle#module-turtle)
 
 
-### **In-class Exercises/Challenges**: 
+### In-class Exercises/Challenges: 
     * Using the turtle class create a generative/fractal design, like this:
 
 ![generative art](../imgs/genart.png)

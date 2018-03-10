@@ -99,7 +99,7 @@ april.move()
 geoffery.eatFromTrees()
 ```
 
-* **In-class Exercises/Challenges**: 
+### In-class Exercises/Challenges: 
     * Create a program to calculate our weight on the moon (or any planet):
         * Create function to take the starting weight and increase the weight each year
         * Modify the function so that you can change the amount of years
