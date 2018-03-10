@@ -134,7 +134,8 @@ donatello.color(0, 0, 0)
 * If we wanted white we add 100% of all colors. This would look like this:
 ```python
 donatello.color(1, 1, 1)
-``` 
+```
+
 ### CIRCLES
 * To create a circle using code we use the following code:
 ```python
