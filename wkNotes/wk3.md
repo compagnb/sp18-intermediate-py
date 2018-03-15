@@ -50,6 +50,8 @@ wn.register_shape(img)
 t.shape(pikaImg)
 ```
 
+
+
 ### KEYBINDING
 * First we need to use turtle's **listen()** function to tell Python that we will be listening for an **event**, like a key press.
  
@@ -89,13 +91,3 @@ def turnLeft():
 * register_shape
 * shape
 
-
-* Review of Built-in Functions/Modules
-    * abs, bool, dir, eval, exec, float, int, len, max, min, range, sum
-    * Random - randint, choice, shuffle
-    * Sys - exit shell, reading and writing stdin/stdout objects
-    * Time - convert asctime, localtime, sleep
-    * Math
-    * Url
-    * Json
-* Creating A Custom Module

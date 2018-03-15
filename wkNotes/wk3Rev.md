@@ -1,90 +1,102 @@
-## Week 2 
+## Week 3
 
-![Pikachu Runnng](../imgs/pika.gif)
+### DRAWING SHAPES
 
-### BACKGROUNDS & BASIC SPRITES
-* We have already begun to use the **Pen()** class within the turtle module, but there are other classes. The **Screen()** class gives us a playground for the turtles to use.
-
+* Last week we made a square, but if we change **parameters** in the loop, we can create shapes different from a square.
 ```python
-wn = turtle.Screen()
+donatello.reset()
+for x in range(1,5):
+    donatello.forward(20)
+    donatello.left(94)
 ```
-* Once we assign an instance of **Screen()**  to a variable, we can start to control more aspects of the area we use the turtles in. 
-    * **bgcolor()** allows us to change the background color of the screen
-    * **title()** allows us to change the name of the window.
-    * **bgpic()** allows us to add a background image 
+* If we increase the range, the star will have more points. If we increase the number the turtle moves forward, we will increase the length of the star tips. The angle, which we rotate, makes the point skinnier or fatter. The above code looks like this:
 
+![nonsquare](../imgs/nonsquare.png)
+
+* If we use a function, we can customize the size of the shapes. Here is an example using a square.
 ```python
-wn.bgcolor("black")
-wn.title("Shapes")
-wn.bgpic("stars.gif")
+def mySquare(size):
+    t.reset()
+    for x in range(1,5):
+        t.forward(size)
+        t.left(90)
 ```
+* In this case we use the parameter of our function (size) to change the length in which the turtle draws each side.
 
-### BASIC SPRITES 
-* The default setting for the turtle's shape is an **arrow**, but this can be modified to be set as other shapes. To use one of the alternate shapes already registered in the turtle **Screen** shape dictionary. If it is a **registered shape**, use the **shape()** function to set it as one of the following shapes:
+![size](../imgs/size.png)
 
+* We can use an if statement to control how the turtle will turn and draw another variation.
 ```python
-t.shape("arrow")
-t.shape("turtle")
-t.shape("circle")
-t.shape("square")
-t.shape("triangle")
-t.shape("classic")
+donatello.reset()
+for x in range(1, 19):
+    donatello.forward(100)
+    if x % 2 == 0:
+        donatello.left(175)
+    else:
+        donatello.left(225)
 ```
-* In order to add a new shape to this library, we will first need to make sure the image file sized correctly. If it is too big then it will take up too much of the screen and if it is too small we will not be able to see it. A good size to work with is **30 pixels.**
-* The **image** should be placed in the same folder as the script. 
-* Store the name of the image as a **string** variable.
+* In this example, we use the expression x % 2 == 0 (or if x mod 2 is equal to 0) to tell us which way the turtle will rotate (left or right). Essentially, the **modulo operator (%)** finds the remainder of x when divided by 2.
 
+![star](../imgs/star.png)
+
+### CIRCLES
+* To create a circle using code we use the following code:
 ```python
-img = "pikachu.gif"
+donatello.circle(50)
+```  
+* To draw a filled circle, first we need to set the color:
+```python
+donatello.color(1, 1, 0)
+```  
+* In this case we set the color to be yellow. Now that the color is set, we must tell Python that we want to fill in the area of the canvas that we are drawing on with that color. We do so by using the **begin_fill()** function, and then drawing the circle by calling the circle function.
+```python
+donatello.color(1, 1, 0)
+donatello.begin_fill()
+donatello.circle(50)
+donatello.end_fill()
+```  
+* Finally, we tell Python that we are don filling in the canvas by using the **end_fill()** function.
+* If we make a function, we can easily draw filled circles using one command. Here is an
+example of a function we would use:
+```python
+def myCircle(red, green, blue):
+    t.color(red, green, blue)
+    t.begin_fill()
+    t.circle(50)
+    t.end_fill()
+```  
+* Similar to how we made a function for drawing a circle we can do the same for squares. To supply us with more options, lets add a parameter to tell Python if we want the square to be filled or not.
+* By using the if statement, if filled is true we will call the function **begin_fill()** and if it isn’t we will not. We will also do the same for the **end_fill()** function. This will allow us the flexibility to draw many different types of squares.
+```python
+def mySquare(size, filled):
+    if filled == True:
+        t.begin_fill()
+    for x in range(1,5):
+        t.forward(size)
+        t.left(90)
+    if filled == True:
+        t.end_fill()
 ```
-
-* We can then **register** the image as a turtle shape by using the following command:
-
+* We can also follow this logic when creating a function for drawing a star. See the below example:
 ```python
-wn.register_shape(img)
+def myStar(size, filled):
+    if filled == True:
+        t.begin_fill()
+    for x in range(1, 19):
+        t.forward(100)
+        if x % 2 == 0:
+            t.left(175)
+        else:
+            t.left(225)
+    if filled == True:
+        t.end_fill()
 ```
-
-* Then you can call the filename as a shape by using the **shape()** function, like we did before. 
-
-```python
-t.shape(pikaImg)
-```
-
-### KEYBINDING
-* First we need to use turtle's **listen()** function to tell Python that we will be listening for an **event**, like a key press.
- 
-```python
-t.listen()
-```
-* Next we are going us the **onkey()** to tell Python to listen for a specific key to be pressed. When the key is pressed it will call the function we specify. In this case we will create a **turnLeft()** function that will be called when the **“Left”** arrow key is pressed. 
- 
-```python
-t.onkey(turnLeft, "left")
-```
-* The function **turnLeft()** will rotate the player turtle 30 degrees every time it is called using the left function. We can do the same for the turning the player right. 
-
-```python
-def turnLeft():
-    player.left(30)
-``` 
-* You can also assign other functions when different keys are pressed. 
 
 ### In-class Exercises/Challenges: 
-    * Create a “Player” class that allows a user to navigate the maze created last week.
-    * Create a “Player” class that controls a spaceship on the screen. (beginning of alternative version of space invaders)
-    * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
-    * Limit the players movement to the viewable screen size/maze boundaries.
-
-
-### VOCABULARY:
-* event
-* image
-* sprite
-
-### TURTLE KEYWORDS:
-* listen
-* onkey
-* bgpic
-* bgcolor
-* register_shape
-* shape
+* Create a child class of the Turtle class in the module turtle called Shapes.
+* Create an __init__ function to set up both the turtle and the shapes class. 
+* Add functions to:
+    * Draw a square that allows options for where on the screen the shape will be drawn (x position & y position), size, and fill color. 
+    * Draw a circle that allows options for where on the screen the shape will be drawn (x position & y position), size, and fill color. 
+    * Draw a star that allows options for where on the screen the shape will be drawn (x position & y position), number of points, size, and fill color. 
+(Make sure that the turtle does not draw a line when moving to the place that the shapes will be drawn)

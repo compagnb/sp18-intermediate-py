@@ -54,31 +54,32 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
     * Using the turtle class create a generative/fractal design
     * Create a class that provides methods for drawing the following shapes: Square, Circle, Octagon, Pentagon.
     * Modify the shapes class to allow for the options of changing the fill color, border, size, etc.
-    * Create a class to build a Maze.
-    * Create a “Player” class that allows a user to navigate the maze created last week.
-    * Create a “Player” class that controls a spaceship on the screen. (beginning of alternative version of space invaders)
-    * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
-    * Limit the players movement to the viewable screen size/maze boundaries.
+    * * Create a child class of the Turtle class in the module turtle called Shapes.
+    * Create an __init__ function to set up both the turtle and the shapes class. 
+    * Add functions to:
+        * Draw a square that allows options for where on the screen the shape will be drawn (x position & y position), size, and fill color. 
+        * Draw a circle that allows options for where on the screen the shape will be drawn (x position & y position), size, and fill color. 
+        * Draw a star that allows options for where on the screen the shape will be drawn (x position & y position), number of points, size, and fill color. 
+        (Make sure that the turtle does not draw a line when moving to the place that the shapes will be drawn)
 * **Vocabulary**: child, parent, boolean, canvas, coordinates, degrees, dimensions, event, import, image, module, pixel, sprite 
 * **Keywords**: import, %
 * **Turtle Keywords**: forward, backward, left, right, reset, clear, up, down, circle, setHeading, begin_fill, end_fill, color, pencolor, pensize, listen, onkey, bgpic, bgcolor, register_shape, shape
 
 
-#### [Week 3: BACKGROUNDS & BASIC SPRITES](wkNotes/wk3Rev.md)
-#### [Week 3: Modules](wkNotes/wk3.md)
+#### [Week 3: Review Drawing With Turtle](wkNotes/wk3Rev.md)
+#### [Week 3: Backgrounds & Basic Sprites](wkNotes/wk3.md)
+* Drawing With Turtle
+* Modifing the Screen 
+* Creating Custom Turtles
 * Key Binding methods
 * background/sprite
-* Review of Built-in Functions/Modules
-    * abs, bool, dir, eval, exec, float, int, len, max, min, range, sum
-    * Random - randint, choice, shuffle
-    * Sys - exit shell, reading and writing stdin/stdout objects
-    * Time - convert asctime, localtime, sleep
-    * Math
-    * Url
-    * Json
 * Creating A Custom Module
 * In-class Exercise/Challenges:
-    * Modify the player class from last week to a module
+    * Create a “Player” class that allows a user to navigate the screen using the left, right, up and down keys.
+    * Modify the player class to appear as a spaceship on the screen. (beginning of alternative version of space invaders)
+    * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
+    * Limit the players movement to the viewable screen size/maze boundaries.
+    * Modify the player class so that it functions as its module
     * Create a module and class for invaders that move around the screen at various speeds, change directions when they hit the edge of the viewable space on the screen & have the option of looking differently.
     * From the invader module, create 20 invaders on the screen. (long method)
 
@@ -100,7 +101,14 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
     * Modify the “space invader” code to change the score when there has been a collision.
 
 #### Week 5: Push/Pull/Encryption Data (Database/file read/write & custom encryptions)
-* Review
+* * Review of Built-in Functions/Modules
+    * abs, bool, dir, eval, exec, float, int, len, max, min, range, sum
+    * Random - randint, choice, shuffle
+    * Sys - exit shell, reading and writing stdin/stdout objects
+    * Time - convert asctime, localtime, sleep
+    * Math
+    * Url
+    * Json
 * Maps
 * Using Arrays to populate Maps
 * Creating/Opening/Writing To Files
