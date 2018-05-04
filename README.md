@@ -4,14 +4,14 @@
 * Class Repo: http://www.github.com/compagnb/sp18-intermediate-py
 
 ### Course Outline
-* 2/24: Classes & Objects (Generative Art)
-* 3/10: Key binding & Basic Sprites
+* 2/24: Classes & Objects 
+* 3/10: Classes & Objects (Generative Art)
 * 3/17 (Substitute): Modules
-* 3/24 (Substitute): Object Arrays & Collision Detection
-* 4/21: Push/Pull/Encryption Data (Database/file read/write & custom encryptions)
-* 5/5: Using API & Real-time Data (Scraping & Mining) 
-* 5/12: Better Graphics Using Tkinter
-* 5/19: Machine Learning (Taste of Advanced)
+* 3/24 (Substitute): Modules & Key binding 
+* 4/21: Key binding & Basic Sprites
+* 5/5: Collision Detection & Object Arrays
+* 5/12: Using API & Real-time Data (Scraping & Mining) 
+* 5/19: TBD
 
 Projects include variations of the games: space invaders, pong, pitfall to include:
 * Creation of custom modules, classes & methods
@@ -67,12 +67,11 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 
 
 #### [Week 3: Review Drawing With Turtle](wkNotes/wk3Rev.md)
-#### [Week 3: Backgrounds & Basic Sprites](wkNotes/wk3.md)
+#### [Week 3 & 4: Modules](wkNotes/wk3.md)
 * Drawing With Turtle
 * Modifing the Screen 
 * Creating Custom Turtles
 * Key Binding methods
-* background/sprite
 * Creating A Custom Module
 * In-class Exercise/Challenges:
     * Create a “Player” class that allows a user to navigate the screen using the left, right, up and down keys.
@@ -83,8 +82,9 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
     * Create a module and class for invaders that move around the screen at various speeds, change directions when they hit the edge of the viewable space on the screen & have the option of looking differently.
     * From the invader module, create 20 invaders on the screen. (long method)
 
-#### Week 4: Object Arrays & Collision Detection
+#### [Week 5 & 6: Collision Detection & Object Arrays](wkNotes/wk4.md)
 * Review
+* background/sprite
 * Array Basics
 * Index
 * Printing
@@ -95,13 +95,12 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
 * Math module
 * Collision detection within objects within arrays.
 * In-class Exercise/Challenges:
-    * Create a module to include a score that is viewable on the screen.
     * Create an array of invaders that move, within the screen (short method)
     * Create a function to calculate if there has been a collision between the player’s spaceship and an invader. 
     * Modify the “space invader” code to change the score when there has been a collision.
 
-#### Week 5: Push/Pull/Encryption Data (Database/file read/write & custom encryptions)
-* * Review of Built-in Functions/Modules
+#### Week 7: Push/Pull/Encryption Data (Database/file read/write & custom encryptions)
+* Review of Built-in Functions/Modules
     * abs, bool, dir, eval, exec, float, int, len, max, min, range, sum
     * Random - randint, choice, shuffle
     * Sys - exit shell, reading and writing stdin/stdout objects
@@ -121,8 +120,9 @@ Projects include variations of the games: space invaders, pong, pitfall to inclu
     * Copying A File
     * Guess The Number
     * Build high score component
+    * Create a module to include a score that is viewable on the screen.
 
-#### Week 6: Using API & Real-time Data (Scraping & Mining) 
+#### Week 8: Using API & Real-time Data (Scraping & Mining) 
 * URLIB
 * JSON
 * In-class Exercise/Challenges:
