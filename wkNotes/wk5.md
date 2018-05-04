@@ -62,9 +62,50 @@ invader.setposition(random.randint(-300, 300), random.randint(-300, 300))
 ```
 *  This should all happen in the main game loop because we need to constantly check for a collision between the goal object and the player.
 
-### Object Arrays
-*
+### Arrays
+* Arrays are fundamental part of most programming languages. It is the collection of elements of a single data type (String, Int, etc.).
 
+```python
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 20]
+array = [A, B, C, D, E]
+array = [Mario, Peach, Pikachu]
+```
+
+* We can create a Python array with comma separated elements between square brackets[].
+
+```python
+array = []
+```
+
+* Index is the position of element in an array. In Python, arrays are zero-indexed. This means, the element's position starts with 0 instead of 1.
+
+![index](../imgs/arrayIndex.png)
+
+
+```python
+array = [10, 20, 30, 40, 50]
+print(arr[0])
+print(arr[1])
+print(arr[2])
+```
+
+* Python arrays are just lists, so finding the length of an array is equivalent to finding length of a list in Python.
+
+```python
+brands = ["Coke", "Apple", "Google", "Microsoft", "Toyota"]
+num_brands = len(brands)
+print(num_brands)
+```
+
+* To add a new element to an array, we use append() method in Python.
+```python
+add = ['a', 'b', 'c']
+add.append('d')
+print(add)
+```
+
+
+### Object Arrays
 * Instead of creating 50 individual invaders (in the game.py file), we can do it more simply using lists and loops. First we need to import the invader module we just created.
 
 ```python
