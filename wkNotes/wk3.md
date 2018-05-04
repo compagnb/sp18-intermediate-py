@@ -130,7 +130,6 @@ t.onkey(player.turnLeft, "left")
 * You can also assign other functions when different keys are pressed. 
 
 ### In-class Exercises/Challenges: 
-    * Create a “Player” class that allows a user to navigate the maze created last week.
     * Create a “Player” class that controls a spaceship on the screen. (beginning of alternative version of space invaders)
     * Use Player class to create a 2 player game that controls 2 different spaceships on the screen.
     * Limit the players movement to the viewable screen size/maze boundaries.
